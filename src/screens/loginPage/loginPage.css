@@ -1,3 +1,79 @@
 .loginContainer {
+  display: flex;
+  height: 70%;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: wheat;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
   color: black;
+}
+.loginForm {
+  display: flex;
+  width: 100%;
+  height: 55%;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 2.5%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.loginContainer h1 {
+  margin-top: 2%;
+}
+#authEmail {
+  box-sizing: border-box;
+  height: 14%;
+  padding: 0;
+  margin: 0;
+}
+#authPassword {
+  box-sizing: border-box;
+  height: 14%;
+  padding: 0;
+  margin: 0;
+}
+.loginForm .submitButton {
+  height: 16%;
+  width: 25%;
+  margin: 0;
+  padding: .2vh .7vh;
+  border: 1px solid black;
+  background-color: #455D7A;
+  color: white;
+  transition: background-color .3s ease;
+}
+.loginForm .submitButton:hover {
+  background-color: #FACF5A;
+  transition: background-color .3s ease;
+}
+.loginContainer p {
+  text-align: center;
+}
+@media (min-width: 370px ) and (min-height: 660px) {
+  .loginForm {
+    width: 100%;
+    height: 50%;
+  }
+  .loginContainer h1 {
+    margin-top: 5%;
+  }
+  .loginForm .submitButton {
+    height: 14%;
+    width: 25%;
+  }
+  #authPassword {
+    height: 12%;
+  }
+  #authEmail {
+    height: 12%;
+  }
 }

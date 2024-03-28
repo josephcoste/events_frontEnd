@@ -71,7 +71,7 @@ function NavBar({ showSearch, user }) {
     <div className="navBar">
 
       <NavLink to="/">
-        <div className="logo">Logo</div>
+        <div className="logo"></div>
       </NavLink>
       <SearchBar showSearch={showSearch} />
       <div className="navBarMenu">

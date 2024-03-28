@@ -60,7 +60,7 @@ function EditProfilePage(props) {
 
   return (
     <>
-      {/* <NavBar showSearch="noShow" /> */}
+      <NavBar showSearch="noShow"  />
       <div className="editContainer">
         <h1>Profile Page</h1>
         <form>

@@ -40,17 +40,19 @@ function ProfilePage(props) {
 
   return (
     <>
-      {/* <NavBar showSearch="noShow" /> */}
-      <div>
+      <NavBar showSearch="noShow" />
+      <div className="profilePageContainer">
         <img
           className="profileLogo"
           src="http://pluspng.com/img-png/user-png-icon-big-image-png-2240.png"
           alt="userLogo"
         />
-        <h1>{user.name}</h1>
-        <p>{user.email}</p>
-        <Link to={"/edit"}>Edit</Link>
-        <button onClick={onLogout}>Logout</button>
+        <h1 className="profilePageUserName">{user.name}</h1>
+        <p className="profilePageEmail">{user.email}</p>
+        <div className="profilePageBtn">
+          <Link className="profilePageEditBtn" to={"/edit"}>Edit</Link>
+          <button className="profilePageLogoutBtn" onClick={onLogout}>Logout</button>
+        </div>
       </div>
     </>
   );

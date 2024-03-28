@@ -13,12 +13,19 @@
     transform: translate(-50%, -50%);
 }
 .helpPageTitle {
+    color: black;
     font-size: 2.5vh;
 }
 .collaboratorName {
-    color: white;
+    color: black;
     font-size: 1.5vh;
     font-weight: bold;
+    cursor: default;
+    transition: color .3s ease;
+}
+.collaboratorName:hover{
+    color: white;
+    transition: color .3s ease;
 }
 .collaboratorContainer {
     display: flex;
@@ -28,17 +35,44 @@
     background-color:#455D7A;
     align-items: center;
     justify-content: space-around;
+    transition: transform .3s ease;
+}
+.collaboratorContainer:hover {
+    transform: scale(1.1);
+    transition: transform .3s ease;
 }
 .gitHubIcon {
+    background-image: url("../../../public/img/github.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 6vh;
+    aspect-ratio: 1/1;
 }
 .linkedInIcon {
+    background-image: url("../../../public/img/linkedIn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 6vh;
+    aspect-ratio: 1/1;
+}
+.gitHubIcon a {
+    display: block;
+    height: 6vh;
+    aspect-ratio: 1/1;
+}
+.linkedInIcon a {
+    display: block;
+    height: 6vh;
+    aspect-ratio: 1/1;
 }
 @media (min-width: 760px) {
-    .collaboratorContainer {
-        justify-content: center;
-    }
     .collaboratorName {
         font-size: 3vh;
+    }
+    .collaboratorContainer{
+        width: 50vw;
     }
     .helpPageTitle {
         margin: 0;
@@ -47,5 +81,6 @@
     .helpPageContainer {
         height: 80vh;
         top: 55%;
+        width: 60vw;
     }
 }

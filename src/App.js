@@ -54,10 +54,10 @@ function App() {
           path="/profile"
           element={<ProfilePage user={user} setUser={setUser} />}
         />
-        <Route path="/events/:id" element={<EventPage />} />
+        <Route path="/events/:id" element={<EventPage user={user} />} />
         <Route path="/help" element={<HelpPage user={user}/>} />
-        <Route path="/signup" element={<SignUpPage setUser={setUser} />} />
-        <Route path="/edit" element={<EditProfilePage setUser={setUser} />} />
+        <Route path="/signup" element={<SignUpPage user={user} setUser={setUser} />} />
+        <Route path="/edit" element={<EditProfilePage user={user} setUser={setUser} />} />
       </Routes>
 
       <Menu />
